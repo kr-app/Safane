@@ -1,0 +1,36 @@
+// Localizable.strings (English)
+
+//--------------------------------------------------------------------------------------------------------------------------------------------
+"Safane Preferences" = "Safane Preferences";
+
+"General" = "General";
+"Relaunch Safane on Login" = "Relaunch Safane on Login";
+
+"Cancel" = "Cancel";
+"Delete" = "Delete";
+
+"ALFRED_FIRST_STARTED_FROM_MENU_BAR" = "is accessible from your menu bar";
+
+"HELP_GOTO_WEBSITE" = "Go to the Safane Website…";
+"HELP_CONTACT_SUPPORT_OR_FEEDBACK" = "Contact Support or Send Feedback…";
+"HELP_EMAIL_SUPPORT" = "Contact Support by E-mail…";
+"HELP_SUPPORT_PAGE" = "Suport Web Page…";
+"HELP_SUBMIT_REPORT" = "Submit Problem Report...";
+
+"Preferences…" = "Preferences…";
+"Quit Safane" = "Quit Safane";
+
+"Bring Safari to Front" = "Bring Safari to Front";
+"Open Safari" = "Open Safari";
+"Restore Snapshot" = "Restore Snapshot";
+"New Workspace…" = "New Workspace…";
+"Rename Workspace…" = "Rename Workspace…";
+"Delete Workspace…" = "Delete Workspace…";
+
+"New Workspace" = "New Workspace";
+"Rename Workspace" = "Rename Workspace";
+"Name" = "Name";
+"No Window" = "No Window";
+
+"Default Workspace" = "Default Workspace";
+//--------------------------------------------------------------------------------------------------------------------------------------------

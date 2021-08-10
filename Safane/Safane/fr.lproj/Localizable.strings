@@ -1,0 +1,38 @@
+// Localizable.strings (French)
+
+"Safari Workspaces Preferences" = "Préférences de Safari Workspaces";
+
+"General" = "Général";
+"Relaunch Safari Workspaces on Login" = "Relancer Safari Workspaces à l'ouverture de session";
+
+"Cancel" = "Annuler";
+"Delete" = "Supprimer";
+
+"ALFRED_FIRST_STARTED_FROM_MENU_BAR" = "est accessible depuis la barre des menus";
+
+"HELP_GOTO_WEBSITE" = "Aller sur le site Web de Safari Workspaces…";
+"HELP_CONTACT_SUPPORT_OR_FEEDBACK" = "Contacter le support / donneer un avis…";
+"HELP_EMAIL_SUPPORT" = "Contacter le Support par e-mail…";
+"HELP_SUBMIT_REPORT" = "Envoyer un rapport des problèmes...";
+
+"Preferences…" = "Preferences…";
+"Quit Safari Workspaces" = "Quitter Safari Workspaces";
+
+"Bring Safari to Front" = "Ramener Safari au premier plan";
+"Open Safari" = "Ouvrir Safari";
+"Show Workspaces…" = "Afficher les Workspaces…";
+"Take Snapshot" = "Prendre une capture";
+"Restore Snapshot" = "Restituer la capture";
+"New Workspace…" = "Nouveau Workspace…";
+"Rename Workspace…" = "Renommer le Workspace…";
+"Delete Workspace…" = "Supprimer le Workspace…";
+
+"New Workspace" = "Nouveau Workspace";
+"Rename Workspace" = "Renommer le Workspace";
+"Name" = "Nom";
+"No Window" = "Aucune fenêtre";
+
+"Default Workspace" = "Workspace par défaut";
+
+"Are you sure you want to delete the workspace \"%@\"?" = "Souhaitez-vous réellement supprimer le workspace \"%@\" ?";
+"This opereation cannot be canceled and will close all of its windows." = "Cette opération ne peut être annulée et fermera toutes les fenêtres du workspace.";
