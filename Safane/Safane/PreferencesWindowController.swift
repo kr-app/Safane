@@ -9,10 +9,14 @@ import Cocoa
 
 	@objc static let shared = PreferencesWindowController(windowNibName: "PreferencesWindowController")
 
-	@IBOutlet var checkForUpdateButton: NSButton!
+	// General
 	@IBOutlet var relaunchOnLoginButton: NSButton!
 	@IBOutlet var hotKeyButton: NSButton!
 	@IBOutlet var hotKeyField: THHotKeyFieldView!
+
+	// Snapshots
+	@IBOutlet var refreshIntervalField: NSTextField!
+	@IBOutlet var maxCapturesField: NSTextField!
 
 	override func windowDidLoad() {
 		super.windowDidLoad()
@@ -26,6 +30,9 @@ import Cocoa
 																keyCode: hotKey?.keyCode ?? 0,
 																modifierFlags: hotKey?.modifierFlags ?? 0,
 																isEnabled: hotKey?.isEnabled ?? false)
+		
+		refreshIntervalField.integerValue = Int(SfUserPref.shared.refreshInterval ?? SfUserPref.defaultRefreshInterval)
+		maxCapturesField.integerValue = SfUserPref.shared.maxCaptures ?? SfUserPref.defaultMaxCaptures
 	}
 	
 	// MARK: -

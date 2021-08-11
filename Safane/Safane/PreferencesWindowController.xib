@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="18122" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="18122"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="SafariWs" customModuleProvider="target">
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindowController" customModule="Safane" customModuleProvider="target">
             <connections>
-                <outlet property="checkForUpdateButton" destination="wmr-wk-hRc" id="KFE-Dy-nW6"/>
                 <outlet property="hotKeyButton" destination="kKD-5B-oyo" id="4cj-w1-44o"/>
                 <outlet property="hotKeyField" destination="sfD-DR-3xb" id="M8D-X6-OUE"/>
+                <outlet property="maxCapturesField" destination="o6S-zw-YMg" id="NdA-SN-baO"/>
+                <outlet property="refreshIntervalField" destination="J0K-Sn-0qY" id="SC8-1J-8AD"/>
                 <outlet property="relaunchOnLoginButton" destination="9MT-ga-s7h" id="2Ah-Xs-Aaj"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="4Al-WS-pc2"/>
             </connections>
@@ -18,14 +20,14 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" titlebarAppearsTransparent="YES" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-            <rect key="contentRect" x="196" y="240" width="380" height="127"/>
+            <rect key="contentRect" x="196" y="240" width="380" height="187"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1366" height="743"/>
             <view key="contentView" wantsLayer="YES" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="380" height="127"/>
+                <rect key="frame" x="0.0" y="0.0" width="380" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKD-5B-oyo" customClass="THNSButtonLocalized" customModule="SafariWs" customModuleProvider="target">
-                        <rect key="frame" x="18" y="19" width="156" height="18"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKD-5B-oyo" customClass="THNSButtonLocalized" customModule="Safane" customModuleProvider="target">
+                        <rect key="frame" x="18" y="103" width="156" height="18"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Enable Shortcut" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="q6k-3a-dYM">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -35,16 +37,8 @@
                             <action selector="hotKeyButtonAction:" target="-2" id="Vnj-1g-Ewr"/>
                         </connections>
                     </button>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wmr-wk-hRc" customClass="THNSButtonLocalized" customModule="SafariWs" customModuleProvider="target">
-                        <rect key="frame" x="18" y="67" width="342" height="18"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="check" title="Check for Updates Automatically" bezelStyle="regularSquare" imagePosition="left" enabled="NO" state="on" inset="2" id="fNt-wz-7vf">
-                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                    </button>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-bW-rb6" customClass="THNSTextFieldLocalized" customModule="SafariWs" customModuleProvider="target">
-                        <rect key="frame" x="18" y="92" width="124" height="15"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WNu-bW-rb6" customClass="THNSTextFieldLocalized" customModule="Safane" customModuleProvider="target">
+                        <rect key="frame" x="18" y="152" width="124" height="15"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="General" id="OP4-Ye-3xm">
                             <font key="font" metaFont="systemBold"/>
@@ -52,12 +46,21 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cA-V0-T7b" customClass="THNSTextFieldLocalized" customModule="Safane" customModuleProvider="target">
+                        <rect key="frame" x="18" y="68" width="124" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Snapshot" id="l6t-DD-dR9">
+                            <font key="font" metaFont="systemBold"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sfD-DR-3xb" customClass="THHotKeyFieldView">
-                        <rect key="frame" x="239" y="15" width="120" height="26"/>
+                        <rect key="frame" x="239" y="99" width="120" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
-                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-ga-s7h" customClass="THNSButtonLocalized" customModule="SafariWs" customModuleProvider="target">
-                        <rect key="frame" x="18" y="43" width="342" height="18"/>
+                    <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9MT-ga-s7h" customClass="THNSButtonLocalized" customModule="Safane" customModuleProvider="target">
+                        <rect key="frame" x="18" y="127" width="342" height="18"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="check" title="Relaunch Safane on Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Hav-hm-yGN">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -67,12 +70,58 @@
                             <action selector="relaunchOnLoginButtonAction:" target="-2" id="Tvs-df-o99"/>
                         </connections>
                     </button>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-FP-aeX">
+                        <rect key="frame" x="18" y="44" width="164" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Time Interval" id="vFV-sp-DLe">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXv-TS-tDM">
+                        <rect key="frame" x="18" y="20" width="164" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" lineBreakMode="clipping" title="Max Captures" id="oJp-cb-OLT">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UuV-mD-umL">
+                        <rect key="frame" x="343" y="15" width="19" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <stepperCell key="cell" continuous="YES" enabled="NO" alignment="left" maxValue="100" id="f1Y-ds-a3y"/>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o6S-zw-YMg">
+                        <rect key="frame" x="290" y="18" width="51" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="IeD-6Q-6Nb">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5NN-oN-6ak">
+                        <rect key="frame" x="343" y="39" width="19" height="28"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <stepperCell key="cell" continuous="YES" enabled="NO" alignment="left" maxValue="100" id="ICB-ID-V5k"/>
+                    </stepper>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J0K-Sn-0qY">
+                        <rect key="frame" x="290" y="42" width="51" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="OnZ-y4-AnK">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <connections>
                 <outlet property="delegate" destination="-2" id="7tG-4l-uvR"/>
             </connections>
-            <point key="canvasLocation" x="88" y="-0.5"/>
+            <point key="canvasLocation" x="113" y="-68.5"/>
         </window>
     </objects>
 </document>

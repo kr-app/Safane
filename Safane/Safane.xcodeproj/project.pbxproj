@@ -16,6 +16,7 @@
 		640272E7269B9BB900FEAFCB /* THNSMenuExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640272E6269B9BB900FEAFCB /* THNSMenuExtensions.swift */; };
 		6415F0DF1BBC729D00D828BA /* THLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6415F0DE1BBC729D00D828BA /* THLog.m */; };
 		641927BE26C3A60300267562 /* SettingsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641927BD26C3A60300267562 /* SettingsMenu.swift */; };
+		641927C026C3A7E300267562 /* SfUserPref.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641927BF26C3A7E300267562 /* SfUserPref.swift */; };
 		641AD023179094B90042E721 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641AD022179094B90042E721 /* Cocoa.framework */; };
 		641AD02F179094B90042E721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AD02E179094B90042E721 /* main.m */; };
 		641AD036179094B90042E721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AD035179094B90042E721 /* AppDelegate.m */; };
@@ -80,6 +81,7 @@
 		6415F0DD1BBC729D00D828BA /* THLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLog.h; sourceTree = "<group>"; };
 		6415F0DE1BBC729D00D828BA /* THLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLog.m; sourceTree = "<group>"; };
 		641927BD26C3A60300267562 /* SettingsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenu.swift; sourceTree = "<group>"; };
+		641927BF26C3A7E300267562 /* SfUserPref.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SfUserPref.swift; sourceTree = "<group>"; };
 		641AD01F179094B90042E721 /* Safane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641AD022179094B90042E721 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		641AD025179094B90042E721 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -337,6 +339,7 @@
 		64F33CBB2685B6F1003BEFAE /* THSfClasses */ = {
 			isa = PBXGroup;
 			children = (
+				641927BF26C3A7E300267562 /* SfUserPref.swift */,
 				64F33CCD2685B6F1003BEFAE /* SfScript.h */,
 				64F33CBD2685B6F1003BEFAE /* SfScript.m */,
 				64F33CC62685B6F1003BEFAE /* SfScripts */,
@@ -490,6 +493,7 @@
 				64A9F6AE257C1B2C00CB9BF6 /* THNSBezierPathExtensions.m in Sources */,
 				64A9F695257C1A5600CB9BF6 /* THFormatterExtensions.swift in Sources */,
 				6415F0DF1BBC729D00D828BA /* THLog.m in Sources */,
+				641927C026C3A7E300267562 /* SfUserPref.swift in Sources */,
 				6430BF38268891480089E49B /* THLikeComparison.swift in Sources */,
 				640151E3269CBC5B00C4DF9A /* THAppInLoginItem.swift in Sources */,
 				64576AF826C26A0F00CE9356 /* THStringEnlacement.m in Sources */,
