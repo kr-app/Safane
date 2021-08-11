@@ -15,6 +15,7 @@
 		640151E3269CBC5B00C4DF9A /* THAppInLoginItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640151E1269CBC5B00C4DF9A /* THAppInLoginItem.swift */; };
 		640272E7269B9BB900FEAFCB /* THNSMenuExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640272E6269B9BB900FEAFCB /* THNSMenuExtensions.swift */; };
 		6415F0DF1BBC729D00D828BA /* THLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6415F0DE1BBC729D00D828BA /* THLog.m */; };
+		641927BE26C3A60300267562 /* SettingsMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641927BD26C3A60300267562 /* SettingsMenu.swift */; };
 		641AD023179094B90042E721 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641AD022179094B90042E721 /* Cocoa.framework */; };
 		641AD02F179094B90042E721 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AD02E179094B90042E721 /* main.m */; };
 		641AD036179094B90042E721 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 641AD035179094B90042E721 /* AppDelegate.m */; };
@@ -25,7 +26,6 @@
 		6425C2271A59418F003E7487 /* AddRenameWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6425C2251A59418F003E7487 /* AddRenameWindowController.m */; };
 		642C1BCF269F1F3400D38827 /* THNSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642C1BCE269F1F3300D38827 /* THNSImageExtensions.swift */; };
 		6430BF38268891480089E49B /* THLikeComparison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6430BF37268891480089E49B /* THLikeComparison.swift */; };
-		643401E526BE7D5000C33C61 /* SettingsMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 643401E426BE7D4F00C33C61 /* SettingsMenu.m */; };
 		64576AF826C26A0F00CE9356 /* THStringEnlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 64576AF726C26A0F00CE9356 /* THStringEnlacement.m */; };
 		646C3E331B52A0C50031494B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646C3E321B52A0C50031494B /* Images.xcassets */; };
 		647151731F446857001D2460 /* StMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 647151721F446857001D2460 /* StMenu.m */; };
@@ -79,6 +79,7 @@
 		640272E6269B9BB900FEAFCB /* THNSMenuExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THNSMenuExtensions.swift; sourceTree = "<group>"; };
 		6415F0DD1BBC729D00D828BA /* THLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLog.h; sourceTree = "<group>"; };
 		6415F0DE1BBC729D00D828BA /* THLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLog.m; sourceTree = "<group>"; };
+		641927BD26C3A60300267562 /* SettingsMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMenu.swift; sourceTree = "<group>"; };
 		641AD01F179094B90042E721 /* Safane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		641AD022179094B90042E721 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		641AD025179094B90042E721 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -96,8 +97,6 @@
 		6425C2251A59418F003E7487 /* AddRenameWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRenameWindowController.m; sourceTree = "<group>"; };
 		642C1BCE269F1F3300D38827 /* THNSImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THNSImageExtensions.swift; sourceTree = "<group>"; };
 		6430BF37268891480089E49B /* THLikeComparison.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THLikeComparison.swift; sourceTree = "<group>"; };
-		643401E326BE7D4F00C33C61 /* SettingsMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsMenu.h; sourceTree = "<group>"; };
-		643401E426BE7D4F00C33C61 /* SettingsMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsMenu.m; sourceTree = "<group>"; };
 		64576AF626C26A0F00CE9356 /* THStringEnlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStringEnlacement.h; sourceTree = "<group>"; };
 		64576AF726C26A0F00CE9356 /* THStringEnlacement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStringEnlacement.m; sourceTree = "<group>"; };
 		646C3E321B52A0C50031494B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
@@ -243,8 +242,7 @@
 			children = (
 				64A9F6C7257C1FA900CB9BF6 /* Safane.entitlements */,
 				64BC79A02580273500B68BAF /* Safane-Bridging-Header.h */,
-				643401E326BE7D4F00C33C61 /* SettingsMenu.h */,
-				643401E426BE7D4F00C33C61 /* SettingsMenu.m */,
+				641927BD26C3A60300267562 /* SettingsMenu.swift */,
 				64B642BD26BE806E007624DA /* StatusIcon.h */,
 				64B642BC26BE806E007624DA /* StatusIcon.m */,
 				647151711F446857001D2460 /* StMenu.h */,
@@ -480,11 +478,11 @@
 				64A9F698257C1A5600CB9BF6 /* THFileManagerExtensions.swift in Sources */,
 				640151D4269C7C3400C4DF9A /* THHotKeyCenter.m in Sources */,
 				640151DE269CBBBC00C4DF9A /* PreferencesWindowController.swift in Sources */,
-				643401E526BE7D5000C33C61 /* SettingsMenu.m in Sources */,
 				647151731F446857001D2460 /* StMenu.m in Sources */,
 				64A9F6B5257C1BDD00CB9BF6 /* THOSAppearance.swift in Sources */,
 				64A0EDEA26865D490075E89F /* SfWorkspaceManager.swift in Sources */,
 				64F33CD82685B6F1003BEFAE /* SfWorkspace.swift in Sources */,
+				641927BE26C3A60300267562 /* SettingsMenu.swift in Sources */,
 				64F33CD22685B6F1003BEFAE /* SfScript.m in Sources */,
 				64A9F69F257C1A5600CB9BF6 /* THExtensions.swift in Sources */,
 				64F33CDE2685B6F1003BEFAE /* SfCapture.swift in Sources */,
