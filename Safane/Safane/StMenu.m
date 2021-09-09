@@ -167,7 +167,7 @@
 			if (today_df==nil)
 			{
 				NSDateFormatter *df=[[NSDateFormatter alloc] initWithDateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle];
-				today_df=[[THTodayDateFormatter alloc] initWithTodayFormat:@"HMS" otherFormatter:df];
+				today_df=[[THTodayDateFormatter alloc] initWithTodayFormat:@"HMS" otherFormat:nil otherFormatter:df];
 			}
 			
 			NSString *title=[today_df stringFromDate:capture.date];
