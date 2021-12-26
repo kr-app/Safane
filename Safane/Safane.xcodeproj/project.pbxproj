@@ -30,6 +30,7 @@
 		64576AF826C26A0F00CE9356 /* THStringEnlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 64576AF726C26A0F00CE9356 /* THStringEnlacement.m */; };
 		646C3E331B52A0C50031494B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646C3E321B52A0C50031494B /* Images.xcassets */; };
 		647151731F446857001D2460 /* StMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 647151721F446857001D2460 /* StMenu.m */; };
+		6471F54D271214F0001394E5 /* THDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6471F54C271214F0001394E5 /* THDataExtensions.swift */; };
 		64735D8F17A250C400A898FD /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64735D8E17A250C400A898FD /* ServiceManagement.framework */; };
 		648414E926BE6F8700E3408F /* THStatusIconAlfredFirst.m in Sources */ = {isa = PBXBuildFile; fileRef = 648414E826BE6F8700E3408F /* THStatusIconAlfredFirst.m */; };
 		649141B71CB8615200A01CEA /* RenameWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 649141B61CB8615200A01CEA /* RenameWindowController.xib */; };
@@ -42,7 +43,6 @@
 		64A9F692257C1A5600CB9BF6 /* THStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F679257C1A5500CB9BF6 /* THStringExtensions.swift */; };
 		64A9F695257C1A5600CB9BF6 /* THFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F681257C1A5500CB9BF6 /* THFormatterExtensions.swift */; };
 		64A9F698257C1A5600CB9BF6 /* THFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F685257C1A5500CB9BF6 /* THFileManagerExtensions.swift */; };
-		64A9F699257C1A5600CB9BF6 /* THDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F687257C1A5500CB9BF6 /* THDataExtensions.swift */; };
 		64A9F69C257C1A5600CB9BF6 /* THNSMenuExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F68B257C1A5500CB9BF6 /* THNSMenuExtensions.m */; };
 		64A9F69F257C1A5600CB9BF6 /* THExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F68E257C1A5600CB9BF6 /* THExtensions.swift */; };
 		64A9F6A1257C1A5600CB9BF6 /* THCocoaExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F690257C1A5600CB9BF6 /* THCocoaExtensions.swift */; };
@@ -104,6 +104,7 @@
 		646C3E321B52A0C50031494B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		647151711F446857001D2460 /* StMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StMenu.h; sourceTree = "<group>"; };
 		647151721F446857001D2460 /* StMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StMenu.m; sourceTree = "<group>"; };
+		6471F54C271214F0001394E5 /* THDataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THDataExtensions.swift; sourceTree = "<group>"; };
 		64735D8E17A250C400A898FD /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		648414E726BE6F8700E3408F /* THStatusIconAlfredFirst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THStatusIconAlfredFirst.h; sourceTree = "<group>"; };
 		648414E826BE6F8700E3408F /* THStatusIconAlfredFirst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THStatusIconAlfredFirst.m; sourceTree = "<group>"; };
@@ -118,7 +119,6 @@
 		64A9F67E257C1A5500CB9BF6 /* THNSMenuExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNSMenuExtensions.h; sourceTree = "<group>"; };
 		64A9F681257C1A5500CB9BF6 /* THFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THFormatterExtensions.swift; sourceTree = "<group>"; };
 		64A9F685257C1A5500CB9BF6 /* THFileManagerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THFileManagerExtensions.swift; sourceTree = "<group>"; };
-		64A9F687257C1A5500CB9BF6 /* THDataExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THDataExtensions.swift; sourceTree = "<group>"; };
 		64A9F68B257C1A5500CB9BF6 /* THNSMenuExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THNSMenuExtensions.m; sourceTree = "<group>"; };
 		64A9F68E257C1A5600CB9BF6 /* THExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THExtensions.swift; sourceTree = "<group>"; };
 		64A9F690257C1A5600CB9BF6 /* THCocoaExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THCocoaExtensions.swift; sourceTree = "<group>"; };
@@ -321,10 +321,10 @@
 			children = (
 				64A9F68E257C1A5600CB9BF6 /* THExtensions.swift */,
 				64A9F690257C1A5600CB9BF6 /* THCocoaExtensions.swift */,
+				6471F54C271214F0001394E5 /* THDataExtensions.swift */,
 				64A9F679257C1A5500CB9BF6 /* THStringExtensions.swift */,
 				64A9F681257C1A5500CB9BF6 /* THFormatterExtensions.swift */,
 				64A9F685257C1A5500CB9BF6 /* THFileManagerExtensions.swift */,
-				64A9F687257C1A5500CB9BF6 /* THDataExtensions.swift */,
 				640272E6269B9BB900FEAFCB /* THNSMenuExtensions.swift */,
 				642C1BCE269F1F3300D38827 /* THNSImageExtensions.swift */,
 				64A9F6AC257C1B2C00CB9BF6 /* THNSBezierPathExtensions.h */,
@@ -498,10 +498,10 @@
 				640151E3269CBC5B00C4DF9A /* THAppInLoginItem.swift in Sources */,
 				64576AF826C26A0F00CE9356 /* THStringEnlacement.m in Sources */,
 				64F33CD42685B6F1003BEFAE /* SfTab.swift in Sources */,
-				64A9F699257C1A5600CB9BF6 /* THDataExtensions.swift in Sources */,
 				64F33CD12685B6F1003BEFAE /* SfWindow.swift in Sources */,
 				64A9F673257C1A3000CB9BF6 /* THBgColorView.swift in Sources */,
 				6425C2231A582BB2003E7487 /* THFoundation.m in Sources */,
+				6471F54D271214F0001394E5 /* THDataExtensions.swift in Sources */,
 				640151D2269C7C3400C4DF9A /* THHotKeyFieldView.m in Sources */,
 				648414E926BE6F8700E3408F /* THStatusIconAlfredFirst.m in Sources */,
 				640151D3269C7C3400C4DF9A /* THHotKey.m in Sources */,
