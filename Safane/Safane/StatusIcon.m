@@ -12,7 +12,7 @@
 {
 	NSSize frameSz=NSMakeSize(18.0,18.0);
 	NSPoint center=NSMakePoint(CGFloatFloor(frameSz.width/2.0),CGFloatFloor(frameSz.height/2.0));
-	BOOL isDark=[THOSAppearance isDarkMode];
+	BOOL isDark=NO;//[THOSAppearance isDarkMode];
 
 	NSImage *img=[[NSImage alloc] initWithSize:frameSz];
 	[img lockFocus];

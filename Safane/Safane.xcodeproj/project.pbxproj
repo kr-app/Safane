@@ -39,7 +39,6 @@
 		64A246801B559C30005F82AF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A2467F1B559C30005F82AF /* CoreGraphics.framework */; };
 		64A9F66E257C19E900CB9BF6 /* THFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F66C257C19E900CB9BF6 /* THFoundation.swift */; };
 		64A9F66F257C19E900CB9BF6 /* THLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F66D257C19E900CB9BF6 /* THLog.swift */; };
-		64A9F673257C1A3000CB9BF6 /* THBgColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F672257C1A3000CB9BF6 /* THBgColorView.swift */; };
 		64A9F692257C1A5600CB9BF6 /* THStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F679257C1A5500CB9BF6 /* THStringExtensions.swift */; };
 		64A9F695257C1A5600CB9BF6 /* THFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F681257C1A5500CB9BF6 /* THFormatterExtensions.swift */; };
 		64A9F698257C1A5600CB9BF6 /* THFileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A9F685257C1A5500CB9BF6 /* THFileManagerExtensions.swift */; };
@@ -64,6 +63,7 @@
 		64F3553026C1D47900B18F41 /* THAsScriptEnlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F3552D26C1D47900B18F41 /* THAsScriptEnlacement.m */; };
 		64F3553526C1D4E100B18F41 /* THIconDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3553226C1D4E100B18F41 /* THIconDownloader.swift */; };
 		64F4C05A1A2B373E005EC9AF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F4C0591A2B373E005EC9AF /* WebKit.framework */; };
+		BEC8211527D8080700FA0F89 /* THColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8211427D8080700FA0F89 /* THColoredView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,7 +114,6 @@
 		64A2467F1B559C30005F82AF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		64A9F66C257C19E900CB9BF6 /* THFoundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THFoundation.swift; sourceTree = "<group>"; };
 		64A9F66D257C19E900CB9BF6 /* THLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THLog.swift; sourceTree = "<group>"; };
-		64A9F672257C1A3000CB9BF6 /* THBgColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THBgColorView.swift; sourceTree = "<group>"; };
 		64A9F679257C1A5500CB9BF6 /* THStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THStringExtensions.swift; sourceTree = "<group>"; };
 		64A9F67E257C1A5500CB9BF6 /* THNSMenuExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THNSMenuExtensions.h; sourceTree = "<group>"; };
 		64A9F681257C1A5500CB9BF6 /* THFormatterExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THFormatterExtensions.swift; sourceTree = "<group>"; };
@@ -154,6 +153,7 @@
 		64F3552E26C1D47900B18F41 /* THAsScriptEnlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAsScriptEnlacement.h; sourceTree = "<group>"; };
 		64F3553226C1D4E100B18F41 /* THIconDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THIconDownloader.swift; sourceTree = "<group>"; };
 		64F4C0591A2B373E005EC9AF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BEC8211427D8080700FA0F89 /* THColoredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,23 +184,14 @@
 				640151D0269C7C3400C4DF9A /* THHotKeyFieldView.h */,
 				640151CD269C7C3400C4DF9A /* THHotKeyFieldView.m */,
 			);
-			name = THHotKey;
-			path = ../../THCommon/Classes/THHotKey;
+			path = THHotKey;
 			sourceTree = "<group>";
 		};
 		641AD016179094B90042E721 = {
 			isa = PBXGroup;
 			children = (
 				641AD021179094B90042E721 /* Frameworks */,
-				641AD03F17913EED0042E721 /* THFoundation */,
-				64A9F678257C1A5500CB9BF6 /* THExtensions */,
-				64F3552B26C1D47900B18F41 /* THAppleScript */,
-				64F3553126C1D4E100B18F41 /* THDistant */,
-				640151CB269C7C3400C4DF9A /* THHotKey */,
-				641AD0B117913F7B0042E721 /* THFinderFile */,
-				641AD08B17913F4E0042E721 /* THDistribution */,
-				6499DAAE1B53259F0091C909 /* THView */,
-				64F33CBB2685B6F1003BEFAE /* THSfClasses */,
+				BEC8202027D807E800FA0F89 /* THCommon */,
 				641AD028179094B90042E721 /* Safane */,
 				641AD020179094B90042E721 /* Products */,
 			);
@@ -282,8 +273,7 @@
 				64A9F6C0257C1E0C00CB9BF6 /* THUnixCommand.h */,
 				64A9F6C1257C1E0C00CB9BF6 /* THUnixCommand.m */,
 			);
-			name = THFoundation;
-			path = ../../THCommon/Classes/THFoundation;
+			path = THFoundation;
 			sourceTree = "<group>";
 		};
 		641AD08B17913F4E0042E721 /* THDistribution */ = {
@@ -292,8 +282,7 @@
 				648414E726BE6F8700E3408F /* THStatusIconAlfredFirst.h */,
 				648414E826BE6F8700E3408F /* THStatusIconAlfredFirst.m */,
 			);
-			name = THDistribution;
-			path = ../../THCommon/Classes/THDistribution;
+			path = THDistribution;
 			sourceTree = "<group>";
 		};
 		641AD0B117913F7B0042E721 /* THFinderFile */ = {
@@ -303,17 +292,15 @@
 				640151E0269CBC5B00C4DF9A /* THSharedLoginItems.h */,
 				640151DF269CBC5B00C4DF9A /* THSharedLoginItems.m */,
 			);
-			name = THFinderFile;
-			path = ../../THCommon/Classes/THFinderFile;
+			path = THFinderFile;
 			sourceTree = "<group>";
 		};
 		6499DAAE1B53259F0091C909 /* THView */ = {
 			isa = PBXGroup;
 			children = (
-				64A9F672257C1A3000CB9BF6 /* THBgColorView.swift */,
+				BEC8211427D8080700FA0F89 /* THColoredView.swift */,
 			);
-			name = THView;
-			path = ../../THCommon/Classes/THView;
+			path = THView;
 			sourceTree = "<group>";
 		};
 		64A9F678257C1A5500CB9BF6 /* THExtensions */ = {
@@ -332,8 +319,7 @@
 				64A9F67E257C1A5500CB9BF6 /* THNSMenuExtensions.h */,
 				64A9F68B257C1A5500CB9BF6 /* THNSMenuExtensions.m */,
 			);
-			name = THExtensions;
-			path = ../../THCommon/Classes/THExtensions;
+			path = THExtensions;
 			sourceTree = "<group>";
 		};
 		64F33CBB2685B6F1003BEFAE /* THSfClasses */ = {
@@ -349,8 +335,7 @@
 				64F33CC42685B6F1003BEFAE /* SfWorkspace.swift */,
 				64A0EDE926865D490075E89F /* SfWorkspaceManager.swift */,
 			);
-			name = THSfClasses;
-			path = ../../THCommon/Classes/THSfClasses;
+			path = THSfClasses;
 			sourceTree = "<group>";
 		};
 		64F33CC62685B6F1003BEFAE /* SfScripts */ = {
@@ -375,8 +360,7 @@
 				64F3552E26C1D47900B18F41 /* THAsScriptEnlacement.h */,
 				64F3552D26C1D47900B18F41 /* THAsScriptEnlacement.m */,
 			);
-			name = THAppleScript;
-			path = ../../THCommon/Classes/THAppleScript;
+			path = THAppleScript;
 			sourceTree = "<group>";
 		};
 		64F3553126C1D4E100B18F41 /* THDistant */ = {
@@ -384,8 +368,24 @@
 			children = (
 				64F3553226C1D4E100B18F41 /* THIconDownloader.swift */,
 			);
-			name = THDistant;
-			path = ../../THCommon/Classes/THDistant;
+			path = THDistant;
+			sourceTree = "<group>";
+		};
+		BEC8202027D807E800FA0F89 /* THCommon */ = {
+			isa = PBXGroup;
+			children = (
+				641AD03F17913EED0042E721 /* THFoundation */,
+				64A9F678257C1A5500CB9BF6 /* THExtensions */,
+				64F3552B26C1D47900B18F41 /* THAppleScript */,
+				64F3553126C1D4E100B18F41 /* THDistant */,
+				640151CB269C7C3400C4DF9A /* THHotKey */,
+				641AD0B117913F7B0042E721 /* THFinderFile */,
+				641AD08B17913F4E0042E721 /* THDistribution */,
+				6499DAAE1B53259F0091C909 /* THView */,
+				64F33CBB2685B6F1003BEFAE /* THSfClasses */,
+			);
+			name = THCommon;
+			path = ../../THCommon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +486,7 @@
 				64A0EDEA26865D490075E89F /* SfWorkspaceManager.swift in Sources */,
 				64F33CD82685B6F1003BEFAE /* SfWorkspace.swift in Sources */,
 				641927BE26C3A60300267562 /* SettingsMenu.swift in Sources */,
+				BEC8211527D8080700FA0F89 /* THColoredView.swift in Sources */,
 				64F33CD22685B6F1003BEFAE /* SfScript.m in Sources */,
 				64A9F69F257C1A5600CB9BF6 /* THExtensions.swift in Sources */,
 				64F33CDE2685B6F1003BEFAE /* SfCapture.swift in Sources */,
@@ -499,7 +500,6 @@
 				64576AF826C26A0F00CE9356 /* THStringEnlacement.m in Sources */,
 				64F33CD42685B6F1003BEFAE /* SfTab.swift in Sources */,
 				64F33CD12685B6F1003BEFAE /* SfWindow.swift in Sources */,
-				64A9F673257C1A3000CB9BF6 /* THBgColorView.swift in Sources */,
 				6425C2231A582BB2003E7487 /* THFoundation.m in Sources */,
 				6471F54D271214F0001394E5 /* THDataExtensions.swift in Sources */,
 				640151D2269C7C3400C4DF9A /* THHotKeyFieldView.m in Sources */,
