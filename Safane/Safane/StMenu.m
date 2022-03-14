@@ -81,12 +81,12 @@
 			if (frontWin!=nil)
 			{
 				SfTab *tab=frontWin.visibleTab;
-				if (tab!=nil)
-					icon=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
+//				if (tab!=nil)
+//					icon=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
 			}
 	
-			if (icon==nil)
-				icon=[[[THWebIconLoader shared] genericIcon16] th_imageGray];
+//			if (icon==nil)
+//				icon=[[[THWebIconLoader shared] genericIcon16] th_imageGray];
 			menuItem.image=icon;
 
 			menuItem.state=workspace==currentWs?NSControlStateValueOn:NSControlStateValueOff;
@@ -110,10 +110,8 @@
 				NSMenuItem *menuItem=[NSMenuItem th_menuItemWithTitle:title tag:0 isEnabled:NO];
 				menuItem.indentationLevel=1;
 
-				NSImage *icon=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
-
-//				menuItem.image=[[NSImage alloc] initWithSize:NSMakeSize(16.0,16.0)];
-				menuItem.image=[icon th_imageGray];
+//				NSImage *icon=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
+//				menuItem.image=[icon th_imageGray];
 //				if (window==windows.firstObject)
 //					menuItem.attributedTitle=[[NSAttributedString alloc] initWithString:title attributes:_mi_menuAttrs];
 		
@@ -273,7 +271,7 @@
 
 			mi.state=tab==selectedTab?NSControlStateValueOn:NSControlStateValueOff;
 			mi.enabled=tab.url!=nil?YES:NO;
-			mi.image=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
+			//mi.image=[[THWebIconLoader shared] iconForHost:tab.host startUpdate:YES allowsGeneric:YES];
 			mi.toolTip=[NSString stringWithFormat:@"%@\n%@",tab.url,tab.title];
 
 			//menuItem.indentationLevel=1;
