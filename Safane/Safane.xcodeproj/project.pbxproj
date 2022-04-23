@@ -63,6 +63,7 @@
 		64F3553026C1D47900B18F41 /* THAsScriptEnlacement.m in Sources */ = {isa = PBXBuildFile; fileRef = 64F3552D26C1D47900B18F41 /* THAsScriptEnlacement.m */; };
 		64F3553526C1D4E100B18F41 /* THIconDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3553226C1D4E100B18F41 /* THIconDownloader.swift */; };
 		64F4C05A1A2B373E005EC9AF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64F4C0591A2B373E005EC9AF /* WebKit.framework */; };
+		BE3B86FB2812B99100EC2448 /* THURLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B86FA2812B99100EC2448 /* THURLExtensions.swift */; };
 		BEC8211527D8080700FA0F89 /* THColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC8211427D8080700FA0F89 /* THColoredView.swift */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +154,7 @@
 		64F3552E26C1D47900B18F41 /* THAsScriptEnlacement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAsScriptEnlacement.h; sourceTree = "<group>"; };
 		64F3553226C1D4E100B18F41 /* THIconDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THIconDownloader.swift; sourceTree = "<group>"; };
 		64F4C0591A2B373E005EC9AF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BE3B86FA2812B99100EC2448 /* THURLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THURLExtensions.swift; sourceTree = "<group>"; };
 		BEC8211427D8080700FA0F89 /* THColoredView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = THColoredView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -314,6 +316,7 @@
 				64A9F685257C1A5500CB9BF6 /* THFileManagerExtensions.swift */,
 				640272E6269B9BB900FEAFCB /* THNSMenuExtensions.swift */,
 				642C1BCE269F1F3300D38827 /* THNSImageExtensions.swift */,
+				BE3B86FA2812B99100EC2448 /* THURLExtensions.swift */,
 				64A9F6AC257C1B2C00CB9BF6 /* THNSBezierPathExtensions.h */,
 				64A9F6AD257C1B2C00CB9BF6 /* THNSBezierPathExtensions.m */,
 				64A9F67E257C1A5500CB9BF6 /* THNSMenuExtensions.h */,
@@ -484,6 +487,7 @@
 				647151731F446857001D2460 /* StMenu.m in Sources */,
 				64A9F6B5257C1BDD00CB9BF6 /* THOSAppearance.swift in Sources */,
 				64A0EDEA26865D490075E89F /* SfWorkspaceManager.swift in Sources */,
+				BE3B86FB2812B99100EC2448 /* THURLExtensions.swift in Sources */,
 				64F33CD82685B6F1003BEFAE /* SfWorkspace.swift in Sources */,
 				641927BE26C3A60300267562 /* SettingsMenu.swift in Sources */,
 				BEC8211527D8080700FA0F89 /* THColoredView.swift in Sources */,
@@ -650,6 +654,11 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					TH_TARGET_OSX,
+				);
 				INFOPLIST_FILE = "Safane/Safane-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -680,6 +689,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = TH_TARGET_OSX;
 				INFOPLIST_FILE = "Safane/Safane-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
