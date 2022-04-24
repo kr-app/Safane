@@ -5,4 +5,5 @@ Menubar item to provide extended Safari browsing:
 - Manage page windows as workspace
 
 **MacUpdate**
+
 https://www.macupdate.com/app/mac/48773/safari-workspaces
