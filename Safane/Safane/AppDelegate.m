@@ -31,8 +31,7 @@
 	_statusItem.button.alternateImage=[StatusIcon statusItemImage:YES];
 	_statusItem.menu=_wsMenu.menu;
 
-	THHotKeyRepresentation *hotKey=[THHotKeyRepresentation hotKeyRepresentationFromUserDefaults];
-	[[THHotKeyCenter shared] tryToRegisterHotKeyRepresentation:hotKey withTag:1];
+	[[THHotKeyCenter shared] registerHotKeyRepresentation:[THHotKeyRepresentation hotKeyRepresentationFromUserDefaultsWithTag:1]];
 
 	if ([THStatusIconAlfredFirst needsDisplayAlfredFirst]==YES)
 		[self performSelector:@selector(showAlfredFirstDelayed) withObject:nil afterDelay:0.5];

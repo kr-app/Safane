@@ -23,7 +23,7 @@ import Cocoa
 	
 		self.window!.title = THLocalizedString("Safane Preferences")
 
-		let hotKey = THHotKeyRepresentation.fromUserDefaults()
+		let hotKey = THHotKeyRepresentation.init(fromUserDefaultsWithTag: 1)
 		hotKeyButton.state = (hotKey != nil && hotKey!.isEnabled == true) ? .on : .off
 		hotKeyField.setControlSize(.small)
 		hotKeyField.setChangeObserver(self,
@@ -60,13 +60,11 @@ import Cocoa
 
 	// MARK: -
 
-	func hotKeyFieldView(_ sender: THHotKeyFieldView!, didChangeWithKeyCode keyCode: UInt, modifierFlags: UInt, isEnabled: Bool) -> Bool {
-		THHotKeyRepresentation(keyCode: keyCode, modifierFlags: modifierFlags, isEnabled: isEnabled).saveToUserDefaults()
-		
-		if isEnabled == true {
+	@objc func hotKeyFieldView(_ sender: THHotKeyFieldView!, didChangeWithKeyCode keyCode: UInt, modifierFlags: UInt, isEnabled: Bool) -> Bool {
+		THHotKeyRepresentation(keyCode: keyCode, modifierFlags: modifierFlags, isEnabled: isEnabled).saveToUserDefaults(withTag: 1)
+		if isEnabled {
 			return THHotKeyCenter.shared().registerHotKey(withKeyCode: keyCode, modifierFlags: modifierFlags, tag: 1)
 		}
-
 		return THHotKeyCenter.shared().unregisterHotKey(withTag: 1)
 	}
 	
