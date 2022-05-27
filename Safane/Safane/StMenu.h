@@ -1,10 +1,10 @@
 // StMenu.h
 
 #import <Cocoa/Cocoa.h>
-#import "AddRenameWindowController.h"
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
 @class SettingsMenu;
+@class AddRenameWindowController;
 
 @interface StMenu : NSObject <NSMenuDelegate>
 {

@@ -5,7 +5,7 @@
 //--------------------------------------------------------------------------------------------------------------------------------------------
 @class SfWorkspace;
 
-@interface AddRenameWindowController : NSWindowController
+@interface AddRenameWindowController : NSWindowController <NSControlTextEditingDelegate>
 {
 	NSInteger _mode;
 	SfWorkspace *_workspace;
@@ -19,8 +19,6 @@
 @property (nonatomic,strong) IBOutlet NSProgressIndicator *loadingIndicator;
 
 - (void)presentForMode:(NSInteger)mode workspace:(SfWorkspace*)workspace;
-
-- (IBAction)changeAction:(NSButton*)sender;
 
 @end
 //--------------------------------------------------------------------------------------------------------------------------------------------

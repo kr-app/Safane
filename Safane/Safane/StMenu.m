@@ -5,6 +5,7 @@
 #import "THLog.h"
 #import "THNSMenuExtensions.h"
 #import "TH_APP-Swift.h"
+#import "AddRenameWindowController.h"
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
 @implementation StMenu

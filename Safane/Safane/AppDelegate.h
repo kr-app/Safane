@@ -1,18 +1,18 @@
 // AppDelegate.h
 
 #import <Cocoa/Cocoa.h>
-#import "StMenu.h"
 #import "THHotKeyCenter.h"
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
+@class StMenu;
+@class AddRenameWindowController;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate,NSMenuDelegate,THHotKeyCenterProtocol>
 {
 	NSStatusItem *_statusItem;
 	StMenu *_wsMenu;
 	AddRenameWindowController *_renameWindowController;
 }
-
-- (IBAction)showPreferences:(NSMenuItem*)sender;
 
 @end
 //--------------------------------------------------------------------------------------------------------------------------------------------

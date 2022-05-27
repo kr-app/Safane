@@ -8,6 +8,7 @@
 #import "SfScript.h"
 #import "StatusIcon.h"
 #import "TH_APP-Swift.h"
+#import "StMenu.h"
 
 //--------------------------------------------------------------------------------------------------------------------------------------------
 @implementation AppDelegate
